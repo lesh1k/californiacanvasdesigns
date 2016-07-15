@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var pug = require('gulp-pug');
 
 var paths = {
-    pug_templates: ['templates/*.pug'],
+    pug_templates: ['templates/**/*.pug'],
     scripts: ['assets/js/**/*.js'],
     images: ['assets/images/**/*'],
     css: ['assets/css/**/*.css'],
