@@ -39,8 +39,6 @@ div.rightcolumn {
     width: 630px;
     padding: 2px;
     margin: 2px;
-    /*border: 1px dashed #BBB;*/
-    ;
     margin-right: 20px;
 }
 div.rotator {
@@ -48,7 +46,6 @@ div.rotator {
     height: 630px;
     padding: 2px;
     margin: 2px;
-    /*border: 1px dashed #BBB;*/
 }
 div.rotator ul li {
     float: right;
@@ -112,14 +109,6 @@ div.cssheader1 {
     -webkit-box-shadow: 0 0 10px #000;
     box-shadow: 0 0 10px #000;
 }
-#container #headercont h1 {
-    /*			font-family: "Francois One", Arial, Helvetica, sans-serif;
-			font-size: 40px;
-			text-transform: uppercase;
-			letter-spacing: -1px;
-			font-weight: normal;
-			padding: 50px 0;*/
-}
 #container #headercont h1 a {
     color: #660000;
 }
@@ -131,7 +120,6 @@ div.cssheader1 {
     width: 1146px;
     margin: 10px;
     line-height: 22px;
-    /*		background: #FFF url('images/bg-maincont.gif') repeat-y;*/
 }
 #container #maincont p {
     margin: 5px 0 18px 0;
@@ -145,9 +133,6 @@ div.cssheader1 {
 }
 #container #maincont h1 {
     font-size: 26px;
-}
-#container #maincont h1c {
-    font-size: 24px;
 }
 #container #maincont h2 {
     font-size: 24px;
@@ -191,13 +176,6 @@ div.cssheader1 {
     margin: 5px
 }
 
-/*		#container #tabmenu ul { margin: 0 0 15px 0; padding: 0; list-style-type: none; width: 178px; }
-		#container #tabmenu ul li { display: block; float: center; margin: 0; padding: 0; width: 178px; }
-		#container #tabmenu ul li a { float: left; color: #FFF; width: 148px; margin: 0 0 1px 0; font-weight: normal; padding: 6px 15px; background: #495A6C; text-decoration: none; }
-			#container #mainleft ul li.active a { width: 148px; color: #FFF; background: #495A6C; }
-		#container #mainleft ul li a:hover { width: 148px; color: #333; background: #FFF; }
-*/
-
 #container #mainright {
     width: 99%;
     padding: 5px;
@@ -212,10 +190,6 @@ div.cssheader1 {
     -moz-box-shadow: 0 0 10px #000;
     -webkit-box-shadow: 0 0 10px #000;
     box-shadow: 0 0 10px #000;
-    /*		position: absolute;
-		margin-top: 1160px;
-		width: 900px;
-		padding: 10px;*/
 }
 #container #footer {
     width: 840px;
