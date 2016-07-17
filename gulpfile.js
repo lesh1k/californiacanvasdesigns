@@ -7,6 +7,7 @@ var paths = {
     scripts: ['assets/js/**/*.js'],
     images: ['assets/images/**/*'],
     css: ['assets/css/**/*.css'],
+    node_modules: ['node_modules/purecss/**/*', 'node_modules/jquery/**/*'],
     destination: 'dist'
 };
 var assets_paths = paths.scripts.concat(paths.images, paths.css);
@@ -23,15 +24,15 @@ gulp.task('compile-templates', function buildHTML() {
 });
 
 gulp.task('copy-to-destination', function() {
-    gulp.src(paths.scripts)
-        .pipe(changed(paths.destination + '/assets/js'))
-        .pipe(gulp.dest(paths.destination + '/assets/js'));
-    gulp.src(paths.images)
-        .pipe(changed(paths.destination + '/assets/images'))
-        .pipe(gulp.dest(paths.destination + '/assets/images'));
-    gulp.src(paths.css)
-        .pipe(changed(paths.destination + '/assets/css'))
-        .pipe(gulp.dest(paths.destination + '/assets/css'));
+    gulp.src(assets_paths, {base: 'assets'})
+        .pipe(changed(assets_paths + '/assets'))
+        .pipe(gulp.dest(paths.destination + '/assets'));
+
+    gulp.src(paths.node_modules, {base: 'node_modules'})
+        .pipe(changed(paths.destination + '/assets/libs'))
+        .pipe(gulp.dest(paths.destination + '/assets/libs'))
+        .pipe(changed('assets/libs'))
+        .pipe(gulp.dest('assets/libs'));
 });
 
 gulp.task('watch', function() {
