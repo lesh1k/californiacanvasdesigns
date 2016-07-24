@@ -1,13 +1,13 @@
 body {
     font-family: Tahoma, 'Droid Sans', Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    /*font-size: 22px;*/
     color: #000000;
     background: #66999a;
     padding: 0;
 }
 a {
     color: #001570;
-    font-size: 22px;
+    /*font-size: 22px;*/
     font-weight: bold
 }
 a:hover {
