@@ -1,3 +1,7 @@
+.pure-menu {
+    text-align: center;
+}
+
 .custom-wrapper {
     background-color: #1b2751;
     margin-bottom: 1em;
@@ -18,9 +22,6 @@
     .menu-brand-wrapper {
         display: none;
     }
-}
-.menu-brand-wrapper {
-
 }
 
 .custom-menu-3 {
