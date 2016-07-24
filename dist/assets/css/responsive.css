@@ -3,6 +3,12 @@ body {
     max-width: 1146px;
     margin: 0 auto;
 }
+
+.content-wrapper {
+    max-width: 100%;
+    width: 100%;
+}
+
 #container, #container > * {
     max-width: 100%;
 }
@@ -15,4 +21,9 @@ body {
     font-size: 3em;
     text-align: center;
     text-shadow: 3px 4px 7px #000;
+    overflow: auto;
+}
+
+.welcome p {
+    margin: .5em 0;
 }
