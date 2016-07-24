@@ -1,29 +1,54 @@
-div.headercont
-    a(href="index.html")
-        img.pure-img.image-header(
-            src="assets/images/headfinal111.png",
-            style="display: block; margin-left: auto; margin-right: auto; padding: 0px;",
-            border="1",
-            alt="California Canvas"
-        )
+header
+    div.headercont
+        a(href="index.html")
+            img.pure-img.image-header(
+                src="assets/images/headfinal111.png",
+                style="display: block; margin-left: auto; margin-right: auto; padding: 0px;",
+                border="1",
+                alt="California Canvas"
+            )
 
-div#maincont.clearfix
-    ul#tabmenu
-        li.active
-            a(href="index.html", title="Home",)
-                img(src="assets/images/button1.png", alt="Home", border="0")
-        li
-            a(href="awnings.html", title="Awnings",)
-                img(src="assets/images/button2.png", alt="Awnings", border="0")
-        li
-            a(href="boats.html", title="Boats",)
-                img(src="assets/images/button3.png", alt="Boats", border="0")
-        li
-            a(href="recovering.html", title="Recovering",)
-                img(src="assets/images/button4.png", alt="Recovering", border="0")
-        li
-            a(href="about.html", title="About",)
-                img(src="assets/images/button5.png", alt="About", border="0")
-        li
-            a(href="imagine.html", title="Imagine",)
-                img(src="assets/images/button6.png", alt="Imagine", border="0")
+    div#menu.custom-wrapper.pure-g
+        div.pure-u-1
+            div.pure-menu
+                a.pure-menu-heading.custom-brand(href="/") &nbsp;
+                a#toggle.custom-toggle(href="#")
+                    span.bar
+                    span.bar
+
+        div.pure-u-1.pure-u-md-1-1
+            div.pure-menu.pure-menu-horizontal.custom-can-transform
+                ul.pure-menu-list
+                    li.pure-menu-item.active
+                        a.pure-menu-link(href="index.html", title="Home") Home
+                    li.pure-menu-item
+                        a.pure-menu-link(href="awnings.html", title="Awnings") Awnings
+                    li.pure-menu-item
+                        a.pure-menu-link(href="boats.html", title="Boats") Boats
+                    li.pure-menu-item
+                        a.pure-menu-link(href="recovering.html", title="Cleaning & recovering") Cleaning &amp; recovering
+                    li.pure-menu-item
+                        a.pure-menu-link(href="about.html", title="About Us") About Us
+                    li.pure-menu-item
+                        a.pure-menu-link(href="imagine.html", title="Imagine the Possibilities") Imagine the Possibilities
+
+    div#maincont.clearfix
+        ul#tabmenu
+            li.active
+                a(href="index.html", title="Home")
+                    img(src="assets/images/button1.png", alt="Home", border="0")
+            li
+                a(href="awnings.html", title="Awnings")
+                    img(src="assets/images/button2.png", alt="Awnings", border="0")
+            li
+                a(href="boats.html", title="Boats")
+                    img(src="assets/images/button3.png", alt="Boats", border="0")
+            li
+                a(href="recovering.html", title="Recovering")
+                    img(src="assets/images/button4.png", alt="Recovering", border="0")
+            li
+                a(href="about.html", title="About")
+                    img(src="assets/images/button5.png", alt="About", border="0")
+            li
+                a(href="imagine.html", title="Imagine")
+                    img(src="assets/images/button6.png", alt="Imagine", border="0")

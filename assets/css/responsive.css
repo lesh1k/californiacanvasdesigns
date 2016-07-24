@@ -1,3 +1,17 @@
+body {
+    max-width: 1146px; /* dictated by the header image */
+    margin: 0 auto;
+}
+
 .image-header {
     width: 100%;
+}
+
+#container,
+#container > * {
+    max-width: 100%;
+}
+
+#footercont {
+    max-width: 100%;
 }
