@@ -1,68 +1,69 @@
 extends ./layout.pug
 
-block content
+block content-top
     div.pure-g
         section.welcome.pure-u-1
             p (650) 873 - 3487
             p Welcome to Califonia Canvas
 
-    div.pure-g
-        div.content-left.pure-u-1.pure-u-md-1-2
-            p.
-                Awnings and canopies are an economical way to add value to your home or business. A beautiful, custom-made awning from California Canvas Design Manufacturing and Cleaning will protect your home from the elements, keeping it cool during the scorching
-                summer months. And, for your business, what better way to attract customers than by offering them comfortable outdoor seating year-round? We are custom specialists. We offer repairs of all types, free estimates and design. Below is a list
-                of just some of our capabilities:
 
-            div#boldlist
-                ul
-                    li Fixed &amp; Retractable Awnings
-                    li Back-lit Awnings
-                    li Recovering's
-                    li Vertical Drop Shades
-                    li Lettering-Graphics
-                    li Cleaning-Repairs
-                    li Interior &amp; Exterior
-                    li Commercial, Residential, &amp; Industrial
-                    li Storm Damage Specialist's
-                    li Boat Tops, &amp; Covers
-                    li Mooring Covers
-                    li Custom Framing &amp; Sewing
-                    li Design Service's
+block content-left
+    p.
+        Awnings and canopies are an economical way to add value to your home or business. A beautiful, custom-made awning from California Canvas Design Manufacturing and Cleaning will protect your home from the elements, keeping it cool during the scorching
+        summer months. And, for your business, what better way to attract customers than by offering them comfortable outdoor seating year-round? We are custom specialists. We offer repairs of all types, free estimates and design. Below is a list
+        of just some of our capabilities:
 
-            div.sponsors-list
-                u Sponsors &amp; Affiliations
-                br
-                div.sponsor.pure-u-1.pure-u-sm-1-3.pure-u-md-1-2.pure-u-lg-1-3
-                    a(href="http://www.easternawning.com/")
-                        img(src="assets/images/east.jpg", border="0")
-                div.sponsor.pure-u-1.pure-u-sm-1-3.pure-u-md-1-2.pure-u-lg-1-3
-                    a(href="http://www.trivantage.com/")
-                        img(src="assets/images/tri.jpg", border="0")
+    div#boldlist
+        ul
+            li Fixed &amp; Retractable Awnings
+            li Back-lit Awnings
+            li Recovering's
+            li Vertical Drop Shades
+            li Lettering-Graphics
+            li Cleaning-Repairs
+            li Interior &amp; Exterior
+            li Commercial, Residential, &amp; Industrial
+            li Storm Damage Specialist's
+            li Boat Tops, &amp; Covers
+            li Mooring Covers
+            li Custom Framing &amp; Sewing
+            li Design Service's
 
-                div.sponsor.pure-u-1.pure-u-sm-1-3.pure-u-md-1-2.pure-u-lg-1-3
-                    a(href="http://www.sunbrella.com/")
-                        img(src="assets/images/sunbrela.jpg", border="0")
+    div.sponsors-list
+        u Sponsors &amp; Affiliations
+        br
+        div.sponsor.pure-u-1.pure-u-sm-1-3.pure-u-md-1-2.pure-u-lg-1-3
+            a(href="http://www.easternawning.com/")
+                img(src="assets/images/east.jpg", border="0")
+        div.sponsor.pure-u-1.pure-u-sm-1-3.pure-u-md-1-2.pure-u-lg-1-3
+            a(href="http://www.trivantage.com/")
+                img(src="assets/images/tri.jpg", border="0")
 
-        div.content-right.pure-u-1.pure-u-md-1-2
-            div.rotator
-                ul
-                    li.show
-                        a(href="javascript:void(0)")
-                            img.pure-img(src="assets/images/shelvedesign.png", alt="Design & Manufacturing")
-                    li
-                        a(href="javascript:void(0)")
-                            img.pure-img(src="assets/images/shelve4.png", alt="Business Awnings")
-                    li
-                        a(href="javascript:void(0)")
-                            img.pure-img(src="assets/images/shelve4-1.png", alt="Residential Awnings")
-                    li
-                        a(href="javascript:void(0)")
-                            img.pure-img(src="assets/images/shelveawn.png", alt="Colorful Awnings")
-                    li
-                        a(href="javascript:void(0)")
-                            img.pure-img(src="assets/images/donald22.png", alt="Structured Awnings")
-                    li
-                        a(href="javascript:void(0)")
-                            img.pure-img(src="assets/images/serra22.png", alt="Beautiful Awnings")
-            div.estimates
-                img.pure-img(src="assets/images/estimate.png")
+        div.sponsor.pure-u-1.pure-u-sm-1-3.pure-u-md-1-2.pure-u-lg-1-3
+            a(href="http://www.sunbrella.com/")
+                img(src="assets/images/sunbrela.jpg", border="0")
+
+
+block content-right
+    div.rotator
+        ul
+            li.show
+                a(href="javascript:void(0)")
+                    img.pure-img(src="assets/images/shelvedesign.png", alt="Design & Manufacturing")
+            li
+                a(href="javascript:void(0)")
+                    img.pure-img(src="assets/images/shelve4.png", alt="Business Awnings")
+            li
+                a(href="javascript:void(0)")
+                    img.pure-img(src="assets/images/shelve4-1.png", alt="Residential Awnings")
+            li
+                a(href="javascript:void(0)")
+                    img.pure-img(src="assets/images/shelveawn.png", alt="Colorful Awnings")
+            li
+                a(href="javascript:void(0)")
+                    img.pure-img(src="assets/images/donald22.png", alt="Structured Awnings")
+            li
+                a(href="javascript:void(0)")
+                    img.pure-img(src="assets/images/serra22.png", alt="Beautiful Awnings")
+    div.estimates
+        img.pure-img(src="assets/images/estimate.png")
