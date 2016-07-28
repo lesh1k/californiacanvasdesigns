@@ -7,7 +7,7 @@ var paths = {
     scripts: ['assets/js/**/*.js'],
     images: ['assets/images/**/*'],
     css: ['assets/css/**/*.css'],
-    node_modules: ['node_modules/purecss/**/*', 'node_modules/jquery/**/*'],
+    node_modules: ['node_modules/purecss/**/*', 'node_modules/jquery/**/*', 'node_modules/icono/**/*'],
     destination: 'dist'
 };
 var assets_paths = paths.scripts.concat(paths.images, paths.css);

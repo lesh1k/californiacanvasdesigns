@@ -12,10 +12,12 @@ body {
 
 .content-footer {
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
+    margin: 1em 0;
 }
 
 .sponsor {
+    text-align: center;
     margin: 15px 0;
 }
 a {
@@ -67,6 +69,10 @@ div.rotator ul li {
 
 .rotator ul li:not(:first-child) {
     opacity: 0;
+}
+
+.estimates img {
+    margin: 0 auto;
 }
 
 /* rotator image style */
