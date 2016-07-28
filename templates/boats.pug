@@ -1,0 +1,30 @@
+extends ./layout.pug
+
+block content
+
+    div.page-title.pure-g
+        div.pure-u-1
+            h1 Boats
+
+    div.pure-g
+        div.pure-u-1
+            p
+                |Your boat sits day in and day out in the open air. Rain pelts it,
+                |wind ravages it, and the sun bleaches it white. Protect your little
+                |treasure with a boat cover from
+                strong &nbsp;California Canvas Design and Cleaning.
+                br
+                br
+
+            |We provide:
+            ul
+                li Covers for Lakeside and Between Rides and In Storage
+                li Travel Covers - Complete Coverage and Safety
+                li Cabin Covers - Custom Fit
+                li Cabin Enclosures - For Protection When the Weather Changes
+
+            br
+            img.pure-img.img-center(src="assets/images/about/boatimg.png")
+
+    block content-footer
+        include ./includes/content_footer.pug
