@@ -1,4 +1,10 @@
 /* eslint-env jquery */
+
+$(document).ready(initRotator);
+$(window).on('load', externalLinks);
+$(window).on('load resize', setupRotatorHeight);
+
+
 function externalLinks() {
     if (!document.getElementsByTagName) return;
     var anchors = document.getElementsByTagName('a');
@@ -9,13 +15,23 @@ function externalLinks() {
             anchor.target = '_blank';
     }
 }
-window.onload = externalLinks;
 
-function theRotator() {
-    rotate();
+function initRotator() {
+    setupRotatorHeight();
     //Call the rotator function to run the slideshow, 6000 = change to next image after 6 seconds
     setInterval(rotate, 6000);
+    $('div.rotator').fadeIn(1000);
+    $('div.rotator ul li').fadeIn(1000); // tweak for IE
+}
 
+function setupRotatorHeight() {
+    var $slides = $('.rotator ul li'),
+        slide_heights = $slides.map(function(i, slide) {
+            return $(slide).height();
+        }),
+        max_slide_height = Math.max.apply(null, slide_heights);
+
+    $slides.parent().height(max_slide_height);
 }
 
 function rotate() {
@@ -33,8 +49,6 @@ function rotate() {
         $next = $current.next();
     }
 
-
-
     //Set the fade in effect for the next image, the show class has higher z-index
     $next.addClass('show')
         .animate({
@@ -47,13 +61,4 @@ function rotate() {
         }, 1000)
         .removeClass('show');
 }
-
-
-
-$(document).ready(function() {
-    //Load the slideshow
-    theRotator();
-    $('div.rotator').fadeIn(1000);
-    $('div.rotator ul li').fadeIn(1000); // tweek for IE
-});
 /*Marshall Smith*/
