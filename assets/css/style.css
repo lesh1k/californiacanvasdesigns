@@ -12,8 +12,14 @@ body {
 
 .content-footer {
     text-align: center;
-    font-size: 3vw;
+    font-size: 1em;
     margin: 1em 0;
+}
+
+@media screen and (min-width: 768) and (max-width: 1023) {
+    .content-footer {
+        font-size: 3vw;
+    }
 }
 
 @media screen and (min-width: 1024px) {
