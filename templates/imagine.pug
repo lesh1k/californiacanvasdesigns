@@ -1,5 +1,13 @@
 extends ./layout.pug
 
+block stylesheets
+    link(rel="stylesheet", href="assets/libs/ideal-image-slider/ideal-image-slider.css")
+    link(rel="stylesheet", href="assets/libs/ideal-image-slider/themes/default/default.css")
+
+block scripts
+    script(src="assets/libs/ideal-image-slider/ideal-image-slider.min.js")
+    script(src="assets/js/slider.js")
+
 block content
 
     div.pure-g
@@ -13,76 +21,31 @@ block content
 
     div.pure-g
         div.pure-u-1
-            img.pure-img.img-center(src="assets/images/awn1.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn2.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn3.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn4.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn5.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn6.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn7.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn8.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn9.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn10.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn11.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn12.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn13.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn14.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn15.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn16.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn17.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn18.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn19.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn20.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn21.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn22.png", alt="stallone")
-            br
-
-            img.pure-img.img-center(src="assets/images/awn23.png", alt="stallone")
-            br
-
-            hr
+            div#imagine-slider.imagine-slider
+                img(src="assets/images/awn1.png", alt="stallone")
+                img(src="", data-src="assets/images/awn2.png", alt="stallone")
+                img(src="", data-src="assets/images/awn3.png", alt="stallone")
+                img(src="", data-src="assets/images/awn4.png", alt="stallone")
+                img(src="", data-src="assets/images/awn5.png", alt="stallone")
+                img(src="", data-src="assets/images/awn6.png", alt="stallone")
+                img(src="", data-src="assets/images/awn7.png", alt="stallone")
+                img(src="", data-src="assets/images/awn8.png", alt="stallone")
+                img(src="", data-src="assets/images/awn9.png", alt="stallone")
+                img(src="", data-src="assets/images/awn10.png", alt="stallone")
+                img(src="", data-src="assets/images/awn11.png", alt="stallone")
+                img(src="", data-src="assets/images/awn12.png", alt="stallone")
+                img(src="", data-src="assets/images/awn13.png", alt="stallone")
+                img(src="", data-src="assets/images/awn14.png", alt="stallone")
+                img(src="", data-src="assets/images/awn15.png", alt="stallone")
+                img(src="", data-src="assets/images/awn16.png", alt="stallone")
+                img(src="", data-src="assets/images/awn17.png", alt="stallone")
+                img(src="", data-src="assets/images/awn18.png", alt="stallone")
+                img(src="", data-src="assets/images/awn19.png", alt="stallone")
+                img(src="", data-src="assets/images/awn20.png", alt="stallone")
+                img(src="", data-src="assets/images/awn21.png", alt="stallone")
+                img(src="", data-src="assets/images/awn22.png", alt="stallone")
+                img(src="", data-src="assets/images/awn23.png", alt="stallone")
+    hr
 
     block content-footer
         include ./includes/content_footer.pug

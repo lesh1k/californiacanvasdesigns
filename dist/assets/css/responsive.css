@@ -52,3 +52,8 @@ body {
 .img-center {
     margin: 0 auto;
 }
+
+.imagine-slider {
+    margin: 0 auto;
+    max-width: 660px;
+}
