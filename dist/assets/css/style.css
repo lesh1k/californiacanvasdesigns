@@ -32,6 +32,11 @@ body {
     text-align: center;
     margin: 15px 0;
 }
+
+.contact {
+    text-align: center;
+    padding-bottom: 10px;
+}
 a {
     color: #001570;
     /*font-size: 22px;*/
@@ -134,8 +139,10 @@ div.cssheader1 {
 .content-container {
     max-width: 100%;
     background-color: #b3daf9;
-    -moz-box-shadow: 0 0 10px #000;
-    -webkit-box-shadow: 0 0 10px #000;
+}
+
+.content-container,
+.header-main {
     box-shadow: 0 0 10px #000;
 }
 .content-container #headercont h1 a {
