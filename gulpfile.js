@@ -7,7 +7,12 @@ var paths = {
     scripts: ['assets/js/**/*.js'],
     images: ['assets/images/**/*'],
     css: ['assets/css/**/*.css'],
-    node_modules: ['node_modules/purecss/**/*', 'node_modules/jquery/**/*', 'node_modules/icono/**/*'],
+    node_modules: [
+        'node_modules/purecss/**/*',
+        'node_modules/jquery/**/*',
+        'node_modules/icono/**/*',
+        'node_modules/ideal-image-slider/**/*'
+    ],
     destination: 'dist'
 };
 var assets_paths = paths.scripts.concat(paths.images, paths.css);
@@ -24,11 +29,15 @@ gulp.task('compile-templates', function buildHTML() {
 });
 
 gulp.task('copy-to-destination', function() {
-    gulp.src(assets_paths, {base: 'assets'})
+    gulp.src(assets_paths, {
+            base: 'assets'
+        })
         .pipe(changed(assets_paths + '/assets'))
         .pipe(gulp.dest(paths.destination + '/assets'));
 
-    gulp.src(paths.node_modules, {base: 'node_modules'})
+    gulp.src(paths.node_modules, {
+            base: 'node_modules'
+        })
         .pipe(changed(paths.destination + '/assets/libs'))
         .pipe(gulp.dest(paths.destination + '/assets/libs'))
         .pipe(changed('assets/libs'))

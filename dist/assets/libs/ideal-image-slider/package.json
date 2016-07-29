@@ -1,0 +1,99 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ideal-image-slider",
+        "scope": null,
+        "escapedName": "ideal-image-slider",
+        "name": "ideal-image-slider",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/mnt/leData/leshik/pro/projects/playground/upwork/californiacanvasdesigns.com"
+    ]
+  ],
+  "_from": "ideal-image-slider@latest",
+  "_id": "ideal-image-slider@1.5.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ideal-image-slider",
+  "_nodeVersion": "4.1.2",
+  "_npmOperationalInternal": {
+    "host": "packages-9-west.internal.npmjs.com",
+    "tmp": "tmp/ideal-image-slider-1.5.1.tgz_1454780175510_0.7230583080090582"
+  },
+  "_npmUser": {
+    "name": "gilbitron",
+    "email": "gilbert@pellegrom.me"
+  },
+  "_npmVersion": "2.14.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ideal-image-slider",
+    "scope": null,
+    "escapedName": "ideal-image-slider",
+    "name": "ideal-image-slider",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ideal-image-slider/-/ideal-image-slider-1.5.1.tgz",
+  "_shasum": "27962f567f5466fe3296a1dac8d386e54fe61560",
+  "_shrinkwrap": null,
+  "_spec": "ideal-image-slider",
+  "_where": "/mnt/leData/leshik/pro/projects/playground/upwork/californiacanvasdesigns.com",
+  "author": {
+    "name": "Gilbert Pellegrom"
+  },
+  "bugs": {
+    "url": "https://github.com/gilbitron/Ideal-Image-Slider/issues"
+  },
+  "dependencies": {},
+  "description": "Quite simply the ideal Image Slider in vanilla JS.",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-qunit": "~0.7.0",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-string-replace": "^0.2.7",
+    "jshint-stylish": "^0.4.0",
+    "load-grunt-tasks": "^0.6.0",
+    "qunitjs": "~1.19.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "27962f567f5466fe3296a1dac8d386e54fe61560",
+    "tarball": "https://registry.npmjs.org/ideal-image-slider/-/ideal-image-slider-1.5.1.tgz"
+  },
+  "gitHead": "edc017cfa75e5e6c1cc1a1e0889c68827ee7bf5f",
+  "homepage": "https://github.com/gilbitron/Ideal-Image-Slider#readme",
+  "keywords": [
+    "ideal",
+    "image",
+    "slider"
+  ],
+  "license": "GPL-3.0",
+  "maintainers": [
+    {
+      "name": "gilbitron",
+      "email": "gilbert@pellegrom.me"
+    }
+  ],
+  "name": "ideal-image-slider",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilbitron/Ideal-Image-Slider.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "version": "1.5.1"
+}
