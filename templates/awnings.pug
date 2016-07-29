@@ -1,5 +1,26 @@
 extends ./layout.pug
 
+block stylesheets
+    link(rel="stylesheet", href="assets/libs/ideal-image-slider/ideal-image-slider.css")
+    link(rel="stylesheet", href="assets/libs/ideal-image-slider/themes/default/default.css")
+
+block scripts
+    script(src="assets/libs/ideal-image-slider/ideal-image-slider.min.js")
+    script.
+        (function() {
+            'use strict';
+            var slider = new IdealImageSlider.Slider({
+                selector: '#slider',
+                effect: 'fade',
+                interval: 6000,
+                transitionDuration: 1000,
+                disableNav: true
+            });
+
+            slider.start();
+        })();
+
+
 block content-top
     div.page-title.pure-g
         div.pure-u-1
@@ -45,26 +66,13 @@ block content-left
         br
 
 block content-right
-    div.rotator
-        ul
-            li.show
-                a(href="javascript:void(0)")
-                    img.pure-img(src="assets/images/shelvedesign.png", alt="Design & Manufacturing")
-            li
-                a(href="javascript:void(0)")
-                    img.pure-img(src="assets/images/shelve44.png", alt="Business Awnings")
-            li
-                a(href="javascript:void(0)")
-                    img.pure-img(src="assets/images/shelve4-1.png", alt="Residential Awnings")
-            li
-                a(href="javascript:void(0)")
-                    img.pure-img(src="assets/images/shelveawn.png", alt="Colorful Awnings")
-            li
-                a(href="javascript:void(0)")
-                    img.pure-img(src="assets/images/donald22.png", alt="Structured Awnings")
-            li
-                a(href="javascript:void(0)")
-                    img.pure-img(src="assets/images/serra22.png", alt="Beautiful Awnings")
+    div#slider
+        img.pure-img(src="assets/images/shelvedesign.png", alt="Design & Manufacturing")
+        img.pure-img(src="", data-src="assets/images/shelve44.png", alt="Business Awnings")
+        img.pure-img(src="", data-src="assets/images/shelve4-1.png", alt="Residential Awnings")
+        img.pure-img(src="", data-src="assets/images/shelveawn.png", alt="Colorful Awnings")
+        img.pure-img(src="", data-src="assets/images/donald22.png", alt="Structured Awnings")
+        img.pure-img(src="", data-src="assets/images/serra22.png", alt="Beautiful Awnings")
     div.estimates
         img.pure-img(src="assets/images/estimate.png")
 

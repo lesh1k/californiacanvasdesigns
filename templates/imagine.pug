@@ -6,7 +6,11 @@ block stylesheets
 
 block scripts
     script(src="assets/libs/ideal-image-slider/ideal-image-slider.min.js")
-    script(src="assets/js/slider.js")
+    script.
+        (function() {
+            'use strict';
+            var slider = new IdealImageSlider.Slider('#imagine-slider');
+        })();
 
 block content
 

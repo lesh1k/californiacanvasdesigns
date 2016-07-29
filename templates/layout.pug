@@ -10,11 +10,13 @@ body
 
             div.pure-g
                 div.content-left.pure-u-1.pure-u-md-1-2
-                    block content-left
-                        | Default content left
+                    div.wrapper
+                        block content-left
+                            | Default content left
                 div.content-right.pure-u-1.pure-u-md-1-2
-                    block content-right
-                        | Default content right
+                    div.wrapper
+                        block content-right
+                            | Default content right
 
             block content-footer
                 include ./includes/content_footer.pug
