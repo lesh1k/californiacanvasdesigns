@@ -7,12 +7,10 @@ body {
     margin: 0 auto;
     padding: 0;
 }
-
 .content-wrapper {
     max-width: 100%;
     width: 100%;
 }
-
 .welcome {
     color: #000;
     font-size: 7vw;
@@ -20,73 +18,57 @@ body {
     text-shadow: 3px 4px 7px #000;
     overflow: auto;
 }
-
 @media screen and (min-width: 768px) {
     .welcome {
         font-size: 4vw;
     }
 }
-
 .welcome p {
     margin: .5em 0;
 }
-
 .content-left .wrapper {
     padding-right: 10px;
 }
-
 @media screen and (max-width: 767px) {
     .content-left .wrapper {
         padding-right: 10px;
     }
 }
-
 .content-left p {
     text-align: justify;
 }
-
-
 .page-title {
     text-align: center;
 }
-
 .img-center {
     margin: 0 auto;
 }
-
 .imagine-slider {
     margin: 0 auto;
     max-width: 660px;
 }
-
-
 .content-container {
     padding: 15px;
 }
-
 .content-footer {
     text-align: center;
     font-size: 1em;
     margin: 1em 0;
 }
-
 @media screen and (min-width: 768) and (max-width: 1023) {
     .content-footer {
         font-size: 3vw;
     }
 }
-
 @media screen and (min-width: 1024px) {
     .content-footer {
         font-size: 2em;
     }
 }
-
 .sponsor {
     text-align: center;
     margin: 15px 0;
 }
-
 .contact {
     text-align: center;
     padding-bottom: 10px;
@@ -99,6 +81,10 @@ a {
 a:hover {
     color: #000B3B;
     text-decoration: none;
+}
+::-moz-selection {
+    background: #66999a;
+    color: #FFF;
 }
 ::selection {
     background: #66999a;
@@ -114,22 +100,16 @@ img.imgright {
     margin: 0 0 10px 15px;
     border: 0px dashed #BBB;
 }
-
 .estimates img {
     margin: 0 auto;
 }
-
 .content-container {
     max-width: 100%;
     background-color: #b3daf9;
 }
-
-.content-container,
-.header-main,
-.footer-main {
+.content-container, .header-main, .footer-main {
     box-shadow: 0 0 10px #000;
 }
-
 .footer-main {
     background-color: #fff;
 }
